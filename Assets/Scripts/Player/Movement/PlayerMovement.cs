@@ -6,23 +6,23 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private float _speed;
+    private PlayerMovementData playerMovementData;
 
-    private Rigidbody2D _rigidbody;
-    private Vector2 _movementInput;
+    private Rigidbody2D rigidbody2D;
+    private Vector2 movementInput;
 
     private void Awake()
     {
-        _rigidbody = GetComponent<Rigidbody2D>();
+        rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
     {
-        _rigidbody.velocity = _movementInput * _speed;
+        rigidbody2D.velocity = movementInput * playerMovementData.Speed;
     }
 
     private void OnMove(InputValue inputValue)
     {
-        _movementInput = inputValue.Get<Vector2>();
+        movementInput = inputValue.Get<Vector2>();
     }
 }
