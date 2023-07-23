@@ -12,20 +12,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80ead51458faf1647b45e387af6f8828, type: 3}
   m_Name: Player Clothes Container
   m_EditorClassIdentifier: 
-  hood: {fileID: 21300000, guid: f7e7bed775fff8347b9e53c67e20875f, type: 3}
+  hood: {fileID: 21300000, guid: 468244f274f38f64b85773c7888444b6, type: 3}
   shoulder:
   - {fileID: 21300000, guid: aa3c97470a4d5234ea50591a35ff9616, type: 3}
   - {fileID: 21300000, guid: 9af6155338c0e8f4ab8f5bb30b4c586e, type: 3}
   elbow:
-  - {fileID: 21300000, guid: 3a94b1e5121a110479590d1d60ce75f0, type: 3}
-  - {fileID: 21300000, guid: e1cf0148d2f367e42966b7ce6ee32e73, type: 3}
+  - {fileID: 21300000, guid: 48ecbe245379f214497aae538fe1d4f3, type: 3}
+  - {fileID: 21300000, guid: ece48dca5e286fd48b5dc0633b08b15d, type: 3}
   wrist:
   - {fileID: 21300000, guid: 0d8396fbd3e20f941b37c1cb7829a2e8, type: 3}
-  - {fileID: 21300000, guid: 30716b7cc770c7b46beff26e032f9ca7, type: 3}
+  - {fileID: 21300000, guid: 661842e23ba86e34abbf52c56c321411, type: 3}
   torso: {fileID: 21300000, guid: 215dd6c48c732d744aecd29e7fecbbfa, type: 3}
   leg:
-  - {fileID: 21300000, guid: 0038d4b0669b99846b9be93321f9d7a4, type: 3}
-  - {fileID: 21300000, guid: e374a8e2ee1ae6b4c938a59399b39ffb, type: 3}
+  - {fileID: 21300000, guid: 40e550cd3b539f14eb98d42b6769b592, type: 3}
+  - {fileID: 21300000, guid: 7b78357522a34d64bb8775b962b0deb0, type: 3}
   boots:
+  - {fileID: 21300000, guid: 6fa8902135d83ff49a376c05761b61d4, type: 3}
+  - {fileID: 21300000, guid: ed569bcf23ebe674180d6ae7a5d29495, type: 3}
+  hoodDefault: {fileID: 21300000, guid: 468244f274f38f64b85773c7888444b6, type: 3}
+  shoulderDefault:
+  - {fileID: 21300000, guid: aa3c97470a4d5234ea50591a35ff9616, type: 3}
+  - {fileID: 21300000, guid: 9af6155338c0e8f4ab8f5bb30b4c586e, type: 3}
+  elbowDefault:
+  - {fileID: 21300000, guid: 48ecbe245379f214497aae538fe1d4f3, type: 3}
+  - {fileID: 21300000, guid: ece48dca5e286fd48b5dc0633b08b15d, type: 3}
+  wristDefault:
+  - {fileID: 21300000, guid: 0d8396fbd3e20f941b37c1cb7829a2e8, type: 3}
+  - {fileID: 21300000, guid: 661842e23ba86e34abbf52c56c321411, type: 3}
+  torsoDefault: {fileID: 21300000, guid: 215dd6c48c732d744aecd29e7fecbbfa, type: 3}
+  legDefault:
+  - {fileID: 21300000, guid: 40e550cd3b539f14eb98d42b6769b592, type: 3}
+  - {fileID: 21300000, guid: 7b78357522a34d64bb8775b962b0deb0, type: 3}
+  bootsDefault:
   - {fileID: 21300000, guid: 6fa8902135d83ff49a376c05761b61d4, type: 3}
   - {fileID: 21300000, guid: ed569bcf23ebe674180d6ae7a5d29495, type: 3}
