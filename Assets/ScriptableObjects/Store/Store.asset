@@ -12,5 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cd5ee09e9ef7b3418fb36064eb9e740, type: 3}
   m_Name: Store
   m_EditorClassIdentifier: 
-  itemsToSell: []
+  itemsToSell:
+  - {fileID: 11400000, guid: 543755b0df823f9499569f37985deb27, type: 2}
+  - {fileID: 11400000, guid: 7e6b415beadd445458d1e65d4fabcccf, type: 2}
+  - {fileID: 11400000, guid: 8ebc98a443e1ada44b04cc083061296a, type: 2}
+  - {fileID: 11400000, guid: 447b5e61b7ca3ef4da578017947fb2f8, type: 2}
+  - {fileID: 11400000, guid: 474694ab718bd4a43af9810ca140207c, type: 2}
   itemsInCart: []
