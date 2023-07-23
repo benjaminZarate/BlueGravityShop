@@ -1,3 +1,4 @@
+using Inventory;
 using Store.Items;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ namespace Store
         [SerializeField] private StoreContainer container;
         [SerializeField] private Money currentMoney;
         [SerializeField] private PlayerClothesContainer playerClothesContainer;
+        [SerializeField] private InventoryManager inventoryManager;
         private int totalPrice;
 
         [SerializeField] private List<Item> itemsInCart;
@@ -36,6 +38,10 @@ namespace Store
                 Debug.LogWarning("buy");
                 playerClothesContainer.UpdateCurrentClothe();
                 currentMoney.currentMoney -= totalPrice;
+                foreach (Item item in itemsInCart)
+                {
+                    inventoryManager.AddToInventory(item);
+                }
                 itemsInCart.Clear();
             }
         }
