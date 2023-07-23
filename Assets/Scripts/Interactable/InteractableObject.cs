@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.EventSystems;
 
-public class InteractableObject : MonoBehaviour, IPointerClickHandler
+public class InteractableObject : MonoBehaviour, IPointerDownHandler
 {
     private bool isInContactWithPlayer;
     [SerializeField] private Transform interactableParent;
@@ -14,12 +14,13 @@ public class InteractableObject : MonoBehaviour, IPointerClickHandler
     [SerializeField] private UnityEvent OnContact;
     [SerializeField] private UnityEvent OnExit;
 
-    public void OnPointerClick(PointerEventData eventData)
+    public void OnPointerDown(PointerEventData eventData)
     {
         if (isInContactWithPlayer) 
         {
             OnClick?.Invoke();
         }
+        Debug.LogWarning("Click");
     }
 
     public void SetInContact(bool value) 
