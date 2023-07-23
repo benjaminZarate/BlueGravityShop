@@ -46,6 +46,11 @@ namespace Store
             }
         }
 
+        public void SellClothe() 
+        {
+            
+        }
+
         public StoreContainer GetStoreContainer() 
         {
             return container;

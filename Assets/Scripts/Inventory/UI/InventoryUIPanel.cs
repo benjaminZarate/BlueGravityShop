@@ -15,6 +15,11 @@ namespace Inventory.UI
 
         private List<InventoryItem> inventoryItemList = new();
 
+        private void Start()
+        {
+            
+        }
+
         private void CreateInventoryItems() 
         {
             int count = inventoryManager.GetItemList().Count;
@@ -25,12 +30,13 @@ namespace Inventory.UI
                 if (i >= inventoryItemList.Count)
                 {
                     inventoryItem = Instantiate(inventoryItemPrefab, inventoryParent);
+                    inventoryItemList.Add(inventoryItem);
                 }
                 else 
                 {
                     inventoryItem = inventoryItemList[i];
                 }
-                inventoryItem.Init(item.Icon, item.Name, item.Type, clothesPreviewUI);
+                inventoryItem.Init(item.Icon, item.Name, item.Type, item.ID, clothesPreviewUI);
             }
         }
 

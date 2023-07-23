@@ -38,6 +38,7 @@ namespace Player.Clothes
             leg[1].sprite = playerClothesContainer.leg[1];
             boots[0].sprite = playerClothesContainer.boots[0];
             boots[1].sprite = playerClothesContainer.boots[1];
+            Debug.LogWarning("update");
         }
     }
 }

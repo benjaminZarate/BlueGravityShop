@@ -15,6 +15,14 @@ public class PlayerClothesContainer : ScriptableObject
     public Sprite[] leg;
     public Sprite[] boots;
 
+    public Sprite hoodDefault;
+    public Sprite[] shoulderDefault;
+    public Sprite[] elbowDefault;
+    public Sprite[] wristDefault;
+    public Sprite torsoDefault;
+    public Sprite[] legDefault;
+    public Sprite[] bootsDefault;
+
     public event Action onClotheBought;
 
     public void ChangeClothe(ItemType itemType, Sprite clothe, Sprite clotheR = null)
@@ -53,5 +61,33 @@ public class PlayerClothesContainer : ScriptableObject
     public void UpdateCurrentClothe() 
     {
         onClotheBought?.Invoke();
+    }
+
+    public void ApplyDefaultClothe(ItemType itemType) 
+    {
+        switch (itemType)
+        {
+            case ItemType.HOOD:
+                hood = hoodDefault;
+                break;
+            case ItemType.TORSO:
+                torso = torsoDefault;
+                break;
+            case ItemType.SHOULDER:
+                shoulder = shoulderDefault;
+                break;
+            case ItemType.ELBOW:
+                elbow = elbowDefault;
+                break;
+            case ItemType.WRIST:
+                wrist = wristDefault;
+                break;
+            case ItemType.LEG:
+                leg = legDefault;
+                break;
+            case ItemType.BOOT:
+                boots = bootsDefault;
+                break;
+        }
     }
 }
