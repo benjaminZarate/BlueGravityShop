@@ -17,13 +17,13 @@ public class BuyClothUIPanel : MonoBehaviour
     {
         foreach (Item item in storeManager.GetItemsInCart())
         {
-            if (item.Icon.Length > 1)
+            if (item.Clothes.Length > 1)
             {
-                clothesPreviewUI.ChangeClothe(item.Type, item.Icon[0], item.Icon[1]);
+                clothesPreviewUI.ChangeClothe(item.Type, item.Clothes[0], item.Clothes[1]);
             }
             else 
             {
-                clothesPreviewUI.ChangeClothe(item.Type, item.Icon[0]);
+                clothesPreviewUI.ChangeClothe(item.Type, item.Clothes[0]);
             }
         }
     }
@@ -37,7 +37,7 @@ public class BuyClothUIPanel : MonoBehaviour
                 itemCartList[i].gameObject.SetActive(false);
                 continue;
             }
-            itemCartList[i].Init(storeManager.GetItemsInCart()[i].Icon[0], storeManager.GetItemsInCart()[i].Name, storeManager.GetItemsInCart()[i].Price.ToString());
+            itemCartList[i].Init(storeManager.GetItemsInCart()[i].Clothes[0], storeManager.GetItemsInCart()[i].Name, storeManager.GetItemsInCart()[i].Price.ToString());
         }
     }
 
@@ -57,13 +57,13 @@ public class BuyClothUIPanel : MonoBehaviour
     {
         foreach (Item item in storeManager.GetItemsInCart())
         {
-            if (item.Icon.Length > 1)
+            if (item.Clothes.Length > 1)
             {
-                playerClothesContainer.ChangeClothe(item.Type, item.Icon[0], item.Icon[1]);
+                playerClothesContainer.ChangeClothe(item.Type, item.Clothes[0], item.Clothes[1]);
             }
             else
             {
-                playerClothesContainer.ChangeClothe(item.Type, item.Icon[0]);
+                playerClothesContainer.ChangeClothe(item.Type, item.Clothes[0]);
             }
         }
         storeManager.BuyClothes();

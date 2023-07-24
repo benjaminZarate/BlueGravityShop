@@ -29,7 +29,7 @@ public class SellUIPanel : MonoBehaviour
             {
                 inventoryItem = inventoryItemList[i];
             }
-            inventoryItem.Init(item.Icon, item.Name, item.Type, item.ID);
+            inventoryItem.Init(item.Icon, item.Clothes, item.Name, item.Type, item.ID);
         }
     }
 

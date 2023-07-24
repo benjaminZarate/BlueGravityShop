@@ -36,7 +36,7 @@ namespace Inventory.UI
                 {
                     inventoryItem = inventoryItemList[i];
                 }
-                inventoryItem.Init(item.Icon, item.Name, item.Type, item.ID, clothesPreviewUI);
+                inventoryItem.Init(item.Icon, item.Clothes, item.Name, item.Type, item.ID, clothesPreviewUI);
             }
         }
 

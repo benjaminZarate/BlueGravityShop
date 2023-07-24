@@ -23,9 +23,9 @@ namespace Store.UI
             fittingRoomUIPanel = GetComponentInParent<FittingRoomUIPanel>();
         }
 
-        public void Init(Sprite[] iconsSprite, string name, ItemType type, string ID) 
+        public void Init(Sprite icon, Sprite[] iconsSprite, string name, ItemType type, string ID) 
         {
-            icon.sprite = iconsSprite[0];
+            this.icon.sprite = icon;
             nameText.text = name;
             this.type = type;
             this.iconsSprite = iconsSprite;

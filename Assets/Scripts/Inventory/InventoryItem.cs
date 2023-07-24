@@ -24,9 +24,9 @@ namespace Inventory.UI
             sellUIPanel = GetComponentInParent<SellUIPanel>();
         }
 
-        public void Init(Sprite[] iconsSprite, string name, ItemType type, string ID, ClothesPreviewUI clothesPreview = null)
+        public void Init(Sprite icon, Sprite[] iconsSprite, string name, ItemType type, string ID, ClothesPreviewUI clothesPreview = null)
         {
-            icon.sprite = iconsSprite[0];
+            this.icon.sprite = icon;
             nameText.text = name;
             this.type = type;
             clothesPreviewUI = clothesPreview;
