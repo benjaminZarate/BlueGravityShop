@@ -11,6 +11,7 @@ public class ClothesPreviewUI : MonoBehaviour
     [SerializeField] private Image[] elbow;
     [SerializeField] private Image[] wrist;
     [SerializeField] private Image torso;
+    [SerializeField] private Image pelvis;
     [SerializeField] private Image[] leg;
     [SerializeField] private Image[] boots;
 
@@ -46,6 +47,9 @@ public class ClothesPreviewUI : MonoBehaviour
                 boots[0].sprite = clothe;
                 boots[1].sprite = clotheR;
                 break;
+            case ItemType.PELVIS:
+                pelvis.sprite = clothe;
+                break;
         }
     }
 
@@ -59,6 +63,7 @@ public class ClothesPreviewUI : MonoBehaviour
         wrist[0].sprite = playerClothesContainer.wrist[0];
         wrist[1].sprite = playerClothesContainer.wrist[1];
         torso.sprite = playerClothesContainer.torso;
+        pelvis.sprite = playerClothesContainer.pelvis;
         leg[0].sprite = playerClothesContainer.leg[0];
         leg[1].sprite = playerClothesContainer.leg[1];
         boots[0].sprite = playerClothesContainer.boots[0];

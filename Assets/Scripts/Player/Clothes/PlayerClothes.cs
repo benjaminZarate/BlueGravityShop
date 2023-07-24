@@ -13,6 +13,7 @@ namespace Player.Clothes
         [SerializeField] private SpriteRenderer[] elbow;
         [SerializeField] private SpriteRenderer[] wrist;
         [SerializeField] private SpriteRenderer torso;
+        [SerializeField] private SpriteRenderer pelvis;
         [SerializeField] private SpriteRenderer[] leg;
         [SerializeField] private SpriteRenderer[] boots;
 
@@ -34,6 +35,7 @@ namespace Player.Clothes
             wrist[0].sprite = playerClothesContainer.wrist[0];
             wrist[1].sprite = playerClothesContainer.wrist[1];
             torso.sprite = playerClothesContainer.torso;
+            pelvis.sprite = playerClothesContainer.pelvis;
             leg[0].sprite = playerClothesContainer.leg[0];
             leg[1].sprite = playerClothesContainer.leg[1];
             boots[0].sprite = playerClothesContainer.boots[0];

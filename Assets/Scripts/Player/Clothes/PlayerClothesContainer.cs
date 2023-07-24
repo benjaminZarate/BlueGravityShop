@@ -12,6 +12,7 @@ public class PlayerClothesContainer : ScriptableObject
     public Sprite[] elbow;
     public Sprite[] wrist;
     public Sprite torso;
+    public Sprite pelvis;
     public Sprite[] leg;
     public Sprite[] boots;
 
@@ -20,6 +21,7 @@ public class PlayerClothesContainer : ScriptableObject
     public Sprite[] elbowDefault;
     public Sprite[] wristDefault;
     public Sprite torsoDefault;
+    public Sprite pelvisDefault;
     public Sprite[] legDefault;
     public Sprite[] bootsDefault;
 
@@ -55,6 +57,10 @@ public class PlayerClothesContainer : ScriptableObject
                 boots[0] = clothe;
                 boots[1] = clotheR;
                 break;
+            case ItemType.PELVIS:
+                pelvis = clothe;
+                break;
+
         }
     }
 
@@ -87,6 +93,9 @@ public class PlayerClothesContainer : ScriptableObject
                 break;
             case ItemType.BOOT:
                 boots = bootsDefault;
+                break;
+            case ItemType.PELVIS:
+                pelvis = pelvisDefault;
                 break;
         }
     }
