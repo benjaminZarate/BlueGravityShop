@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27f3d4fef40b5da48bead2aea15d73ac, type: 3}
-  m_Name: Hood_Green
+  m_Name: Torso_3
   m_EditorClassIdentifier: 
-  ID: HOOD_GREEN
-  Name: Green Hood
-  Price: 100
+  ID: TORSO_3
+  Name: Blue Torso
+  Price: 250
   Clothes:
-  - {fileID: 21300000, guid: f7e7bed775fff8347b9e53c67e20875f, type: 3}
-  Icon: {fileID: 21300000, guid: 048f5ef9c958be942b3d691be6f43cbd, type: 3}
-  Type: 0
+  - {fileID: 21300000, guid: 124013dbba7f284489ac16156c930131, type: 3}
+  Icon: {fileID: 21300000, guid: 290ff8e67353d164694c1eb9d39fdb76, type: 3}
+  Type: 2
   InInventory: 0

@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27f3d4fef40b5da48bead2aea15d73ac, type: 3}
-  m_Name: Grey_Brown
+  m_Name: Elbow_1
   m_EditorClassIdentifier: 
-  ID: WRIST_GREY
-  Name: Grey Wrist
-  Price: 20
-  Icon:
-  - {fileID: 21300000, guid: 342c30774664cc34088bfe173b77c96e, type: 3}
-  - {fileID: 21300000, guid: 574bf96e23209b64eb8fa4c82d71564c, type: 3}
-  Type: 1
+  ID: ELBOW_1
+  Name: Brown Sleeve
+  Price: 40
+  Clothes:
+  - {fileID: 21300000, guid: 48ecbe245379f214497aae538fe1d4f3, type: 3}
+  - {fileID: 21300000, guid: ece48dca5e286fd48b5dc0633b08b15d, type: 3}
+  Icon: {fileID: 21300000, guid: 62097f05b36ce3d4b99ad6af02b91831, type: 3}
+  Type: 4
   InInventory: 0

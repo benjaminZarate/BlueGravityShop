@@ -10,13 +10,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27f3d4fef40b5da48bead2aea15d73ac, type: 3}
-  m_Name: Hood_Green
+  m_Name: Leg_Red
   m_EditorClassIdentifier: 
-  ID: HOOD_GREEN
-  Name: Green Hood
-  Price: 100
+  ID: LEG_RED
+  Name: Red Pants
+  Price: 50
   Clothes:
-  - {fileID: 21300000, guid: f7e7bed775fff8347b9e53c67e20875f, type: 3}
-  Icon: {fileID: 21300000, guid: 048f5ef9c958be942b3d691be6f43cbd, type: 3}
-  Type: 0
+  - {fileID: 21300000, guid: 925993f8892fa474c904d0e9a8f67cee, type: 3}
+  - {fileID: 21300000, guid: 321cb2880c53eb743987a6a94741e4f0, type: 3}
+  Icon: {fileID: 21300000, guid: e26ebf9804c3dda46b2bf13ad00dbfc4, type: 3}
+  Type: 5
   InInventory: 0
