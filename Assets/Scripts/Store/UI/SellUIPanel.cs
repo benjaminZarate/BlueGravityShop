@@ -29,13 +29,27 @@ public class SellUIPanel : MonoBehaviour
             {
                 inventoryItem = inventoryItemList[i];
             }
-            inventoryItem.Init(item.Icon, item.Clothes, item.Name, item.Type, item.ID);
+            inventoryItem.Init(item.Icon, item.Clothes, item.Name, $"${item.Price}", item.Type, item.ID);
         }
     }
 
     private void OnEnable()
     {
         CreateInventoryItems();
+    }
+
+    private void OnDisable()
+    {
+        ClearItems();
+    }
+
+    private void ClearItems()
+    {
+        for (int i = 0; i < inventoryParent.childCount; i++)
+        {
+            Destroy(inventoryParent.GetChild(i).gameObject);
+        }
+        inventoryItemList.Clear();
     }
 
     public InventoryManager GetInventoryManager() 

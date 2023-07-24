@@ -36,7 +36,7 @@ namespace Inventory.UI
                 {
                     inventoryItem = inventoryItemList[i];
                 }
-                inventoryItem.Init(item.Icon, item.Clothes, item.Name, item.Type, item.ID, clothesPreviewUI);
+                inventoryItem.Init(item.Icon, item.Clothes, item.Name, $"${item.Price}",item.Type, item.ID, clothesPreviewUI);
             }
         }
 
@@ -48,9 +48,24 @@ namespace Inventory.UI
             }
         }
 
+        private void ClearItems() 
+        {
+            for (int i = 0; i < inventoryParent.childCount; i++)
+            {
+                Destroy(inventoryParent.GetChild(i).gameObject);
+            }
+            inventoryItemList.Clear();
+        }
+
         private void OnEnable()
         {
             CreateInventoryItems();
+            clothesPreviewUI.UpdateClothes();
+        }
+
+        private void OnDisable()
+        {
+            ClearItems();
         }
     }
 }

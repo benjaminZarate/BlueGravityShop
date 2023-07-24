@@ -13,6 +13,7 @@ namespace Store.UI
         [SerializeField] private StoreContainer storeContainer;
         [SerializeField] private Image icon;
         [SerializeField] private TMP_Text nameText;
+        [SerializeField] private TMP_Text priceText;
         private Sprite[] iconsSprite;
         private ItemType type;
         private string ID;
@@ -23,10 +24,11 @@ namespace Store.UI
             fittingRoomUIPanel = GetComponentInParent<FittingRoomUIPanel>();
         }
 
-        public void Init(Sprite icon, Sprite[] iconsSprite, string name, ItemType type, string ID) 
+        public void Init(Sprite icon, Sprite[] iconsSprite, string name, string price,ItemType type, string ID) 
         {
             this.icon.sprite = icon;
             nameText.text = name;
+            priceText.text = price;
             this.type = type;
             this.iconsSprite = iconsSprite;
             this.ID = ID;

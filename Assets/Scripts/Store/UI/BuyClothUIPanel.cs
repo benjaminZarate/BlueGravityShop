@@ -8,7 +8,8 @@ using UnityEngine;
 public class BuyClothUIPanel : MonoBehaviour
 {
     [SerializeField] private StoreManager storeManager;
-    [SerializeField] private List<ItemCartUI> itemCartList;
+    [SerializeField] private ItemCartUI itemCartUiPrefab;
+    [SerializeField] private RectTransform itemCartParent;
     [SerializeField] private TMP_Text totalPriceText;
     [SerializeField] private ClothesPreviewUI clothesPreviewUI;
     [SerializeField] private PlayerClothesContainer playerClothesContainer;
@@ -30,14 +31,11 @@ public class BuyClothUIPanel : MonoBehaviour
 
     private void InitItems() 
     {
-        for (int i = 0; i < itemCartList.Count; i++)
+        int count = storeManager.GetItemsInCart().Count;
+        for (int i = 0; i < count; i++)
         {
-            if (i >= storeManager.GetItemsInCart().Count) 
-            {
-                itemCartList[i].gameObject.SetActive(false);
-                continue;
-            }
-            itemCartList[i].Init(storeManager.GetItemsInCart()[i].Clothes[0], storeManager.GetItemsInCart()[i].Name, storeManager.GetItemsInCart()[i].Price.ToString());
+            ItemCartUI item = Instantiate(itemCartUiPrefab, itemCartParent);
+            item.Init(storeManager.GetItemsInCart()[i].Icon, storeManager.GetItemsInCart()[i].Name, storeManager.GetItemsInCart()[i].Price.ToString());
         }
     }
 
@@ -51,6 +49,19 @@ public class BuyClothUIPanel : MonoBehaviour
     private void OnEnable()
     {
         Init();
+    }
+
+    private void OnDisable()
+    {
+        ClearItems();
+    }
+
+    private void ClearItems() 
+    {
+        for (int i = 0; i < itemCartParent.childCount; i++)
+        {
+            Destroy(itemCartParent.GetChild(i).gameObject);
+        }
     }
 
     public void BuyItems() 
@@ -67,5 +78,6 @@ public class BuyClothUIPanel : MonoBehaviour
             }
         }
         storeManager.BuyClothes();
+        ClearItems();
     }
 }

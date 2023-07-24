@@ -18,7 +18,7 @@ namespace Store
 
         public void AddItemToCart(Item newItem)
         {
-            if (!itemsInCart.Contains(newItem) && !itemsInCart.Find(i => i.Type == newItem.Type)) 
+            if (!itemsInCart.Contains(newItem)) 
             {
                 itemsInCart.Add(newItem);
                 totalPrice += newItem.Price;
@@ -43,6 +43,7 @@ namespace Store
                     inventoryManager.AddToInventory(item);
                 }
                 itemsInCart.Clear();
+                totalPrice = 0;
             }
         }
 

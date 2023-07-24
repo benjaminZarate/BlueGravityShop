@@ -7,6 +7,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 667576132687358935, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5729629648954851567}
+    - target: {fileID: 667576132687358935, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FilterList
+      objectReference: {fileID: 0}
+    - target: {fileID: 667576132687358935, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Inventory.UI.InventoryUIPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304105456552722223, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5729629648954851567}
+    - target: {fileID: 1304105456552722223, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FilterList
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304105456552722223, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Inventory.UI.InventoryUIPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000428593689301334, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5729629648954851567}
+    - target: {fileID: 2000428593689301334, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FilterList
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000428593689301334, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Inventory.UI.InventoryUIPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 3180265178788109456, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -49,7 +85,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3180265178972674267, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
       propertyPath: m_Size
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180265178972674267, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_Value
+      value: 1.0000006
       objectReference: {fileID: 0}
     - target: {fileID: 3180265178996863021, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
       propertyPath: m_AnchorMax.x
@@ -97,6 +137,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3180265179225482531, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
       propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3180265179959496528, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3180265179959496528, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
@@ -226,6 +270,30 @@ PrefabInstance:
     - target: {fileID: 3180265180551314557, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208219517701337376, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5729629648954851567}
+    - target: {fileID: 3208219517701337376, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FilterList
+      objectReference: {fileID: 0}
+    - target: {fileID: 3208219517701337376, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Inventory.UI.InventoryUIPanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341913805191874525, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5729629648954851567}
+    - target: {fileID: 6341913805191874525, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: FilterList
+      objectReference: {fileID: 0}
+    - target: {fileID: 6341913805191874525, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Inventory.UI.InventoryUIPanel, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3180265180551314497, guid: 5cca7293bfb1e024f8b51e80d879853b, type: 3}

@@ -30,7 +30,7 @@ namespace Store.UI
             foreach (Item item in storeManager.GetStoreContainer().itemsToSell)
             {
                 ItemUI newItem = Instantiate(itemUIPrefab, container);
-                newItem.Init(item.Icon, item.Clothes, item.Name, item.Type, item.ID);
+                newItem.Init(item.Icon, item.Clothes, item.Name,$"${item.Price}", item.Type, item.ID);
                 itemsInDisplay.Add(newItem);
             }
         }
